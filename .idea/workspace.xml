@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b05d6fb4-c30c-4f1f-901f-83fe9131b0a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudyLib/com/study/concurrent/ExecuterDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudyLib/com/study/concurrent/ExecuterDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudyLib/com/study/concurrent/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudyLib/com/study/concurrent/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/study/dnc/CountingInversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/study/dnc/CountingInversion.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
