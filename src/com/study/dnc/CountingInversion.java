@@ -1,5 +1,7 @@
 package com.study.dnc;
 
+import java.util.Arrays;
+
 public class CountingInversion {
 
     public static int countingInversion(int arr[]) {
@@ -25,8 +27,10 @@ public class CountingInversion {
         int inverCount = 0;
         int left = mid - low;
         int right = high - (mid + 1);
-        int leftArr[] = new int[left];
-        int rightArr[] = new int[right];
+       // int leftArr[] = new int[left];
+       // int rightArr[] = new int[right];
+        int leftArr[]  = Arrays.copyOfRange(arr,low,mid+1);
+        int rightArr[]=  Arrays.copyOfRange(arr,mid+1,right+1);
 
         int k = left;
         for (int i = 0; i < left; i++) {
@@ -50,18 +54,14 @@ public class CountingInversion {
             } else {
                 arr[k] = rightArr[j];
                 j++;
-                inverCount+=(mid-inverCount);
+                inverCount+=(mid+1)-(low+i);
             }
         }
         while(i<left){
-            arr[k]=leftArr[i];
-            k++;
-            i++;
+            arr[k++]=leftArr[i++];
         }
         while(j<right){
-            arr[k]=rightArr[j];
-            k++;
-            j++;
+            arr[k++]=rightArr[j++];
         }
 
       return inverCount;
