@@ -11,7 +11,7 @@ public class ClosestProduct {
 		
 		for (int i = 0; i < num.length; i++) {
             for(int j=i+1;j<num.length;j++){
-              largest=arr[i] *arr[i]            	
+           //   largest=arr[i] *arr[i]  ;
             }
 		}
 		return 0;
