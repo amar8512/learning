@@ -1,6 +1,11 @@
-/learning/.idea/
-/learning/.settings/
-/learning/bin/
-/learning/Learnings.impl
-/learning/.project
-/learning/.classpath
+# Don't track content of these folders
+.idea/
+.settings/
+bin/
+
+
+# Compiled source #
+###################
+*.impl
+*.project
+*.classpath

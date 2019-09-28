@@ -12,7 +12,7 @@ import java.util.*;
 public class SynchronizedVersion {
  
 	public static void main(String args[]){
-		
+		// i am just adding a change to check if the git works properly or not.
 		List l1 = new ArrayList();
 		
 		List l2 = Collections.synchronizedList(l1);
