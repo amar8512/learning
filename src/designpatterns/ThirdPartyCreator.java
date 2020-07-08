@@ -1,5 +1,5 @@
-package despat;
-import despat.ClassTypes;
+package designpatterns;
+
 public class ThirdPartyCreator {
 
     public static Shape createInstances(String shapeType){

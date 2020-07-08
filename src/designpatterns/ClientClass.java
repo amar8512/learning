@@ -1,4 +1,4 @@
-package despat;
+package designpatterns;
 
 public class ClientClass {
     static   String shapeName;

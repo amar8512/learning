@@ -3,7 +3,7 @@ import java.util.Collection;;
 public class LearnEquals {
 
 	public static void main(String args[]) {
-		Integer num1 = 128;
+		/*Integer num1 = 128;
 		Integer num2 = 128;
  
 		Collection cl ;
@@ -24,7 +24,12 @@ public class LearnEquals {
 			System.out.println("Both are equal");
 		} else {
 			System.out.println("Both are not equal");
-		}
+		}*/
+      String str = "Myiname is Amar";
+		System.out.println(str.length());
+      String substr=str.substring(10,15);
+		System.out.println(substr.length());
+
 	}
 
 	private static void write(Integer num1) {

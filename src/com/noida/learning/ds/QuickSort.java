@@ -3,27 +3,31 @@ package com.noida.learning.ds;
 import com.noida.learning.java.Utilities;
 
 public class QuickSort {
+    public static void swapArray(int arr[] ,int index1 ,int index2){
+       int temp= arr[index1];
+       arr[index1] = arr[index2];
+       arr[index2] = temp;
+    }
 
     public static void quickSort(int low,int high,int arr[]) {
-        int pi = 0;
         if (low < high) {
-            pi = partition(low, high, arr);
-            quickSort(low, pi, arr);
-            quickSort(pi, high, arr);
+            int pi = partition(low, high, arr);
+            quickSort(low, pi-1, arr);
+            quickSort(pi+1, high, arr);
         }
     }
 
     public static int partition(int low,int high,int arr[]){
-     int pivot = arr[0];
-     int i =1;
-     for(int j=1;j<arr.length;j++){
+     int pivot = arr[low];
+     int i =low+1;
+     for(int j=low+1;j<arr.length;j++){
          if(arr[j]<pivot){
-             Utilities.swapIntegers(arr[j],arr[i]);
+             swapArray(arr,j,i);
              i++;
          }
      }
-     Utilities.swapIntegers(arr[--i],pivot);
-     return --i;
+     swapArray(arr,low,--i);
+     return i;
     }
 
     public static int[] sort(int arr[]){
@@ -32,6 +36,8 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-
+      int arr[] = {9,2,0,11,12,3,7,-1};
+      arr=sort(arr);
+      Utilities.print(arr);
     }
 }
