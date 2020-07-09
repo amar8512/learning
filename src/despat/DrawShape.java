@@ -1,5 +1,7 @@
 package despat;
 
+import designpatterns.Shape;
+
 public class DrawShape {
 
     private Shape shape;

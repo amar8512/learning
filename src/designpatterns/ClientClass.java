@@ -1,8 +1,10 @@
 package designpatterns;
 
+import despat.DrawShape;
+
 public class ClientClass {
     static   String shapeName;
-    static  DrawShape drawShape;
+    static DrawShape drawShape;
     public static void main(String[] args) {
         shapeName ="Rectangle";
         drawShape = new DrawShape();
