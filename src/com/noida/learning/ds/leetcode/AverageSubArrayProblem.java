@@ -1,4 +1,4 @@
-package com.noida.learning;
+package com.noida.learning.ds.leetcode;
 
 public class AverageSubArrayProblem {
     public static double[] calculateAverageOfSubArrays(int arr[],int K){

@@ -1,4 +1,4 @@
-package com.noida.learning.ds;
+package com.noida.learning.ds.hackerrank;
 
 // { Driver Code Starts
 /* package whatever; // don't place package name! */

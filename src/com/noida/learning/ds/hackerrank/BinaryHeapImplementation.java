@@ -1,4 +1,4 @@
-package com.noida.learning.ds;
+package com.noida.learning.ds.hackerrank;
 
 import com.noida.learning.LearningPrinter;
 import com.noida.learning.java.LearnEquals;

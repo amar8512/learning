@@ -1,4 +1,4 @@
-package com.noida.learning;
+package com.noida.learning.ds.leetcode;
 
 public class DivisiblePairSum {
     public static int countKDivPairs(int A[], int n, int K)

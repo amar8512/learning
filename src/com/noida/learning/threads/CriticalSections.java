@@ -2,42 +2,38 @@ package com.noida.learning.threads;
 
 import java.util.Random;
 
-public class CriticalSectionThreadSafe{
+public class CriticalSections {
     public static void main(String[] args) throws InterruptedException {
-        CriticalDatas.test();
+         CriticalData.test();
     }
 
 
 
 }
-class CriticalDatas {
+class CriticalData {
     int randInt=0;
     Random random = new Random(System.currentTimeMillis());
     public  void print(){
         int i=1000000;
         while(i!=0) {
-            synchronized (this) {
-                if (randInt % 5 == 0) {
-                    if (randInt % 5 != 0) {
-                        System.out.println("" + randInt);
-                    }
+            if (randInt % 5 == 0) {
+                if (randInt % 5 != 0) {
+                    System.out.println("" + randInt);
                 }
-                --i;
             }
+            --i;
         }
     }
     public void changeState(){
         int i=1000000;
         while(i!=0){
-            synchronized (this) {
-                randInt = random.nextInt(1000);
-            }
+            randInt = random.nextInt(1000);
             i--;
         }
 
     }
     public static  void test() throws InterruptedException{
-        CriticalDatas criticalData = new CriticalDatas();
+        CriticalData criticalData = new CriticalData();
 
         Thread printerThread  = new Thread(){
             @Override public void run() {
@@ -54,6 +50,4 @@ class CriticalDatas {
         printerThread.join();
         changerThread.join();
     }
-
-
 }

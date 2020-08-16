@@ -1,4 +1,4 @@
-package com.noida.learning;
+package com.noida.learning.ds.leetcode;
 
 public class MaximumSumSubArray {
     public static int findMaxSumSubArray(int K,int arr[]){

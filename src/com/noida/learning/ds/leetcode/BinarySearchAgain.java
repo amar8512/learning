@@ -1,4 +1,4 @@
-package com.noida.learning.ds;
+package com.noida.learning.ds.leetcode;
 
 public class BinarySearchAgain {
     public static int binRecursiveSearch(int arr[],int key,int low,int high){

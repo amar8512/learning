@@ -1,4 +1,4 @@
-package com.noida.learning.ds;
+package com.noida.learning.ds.hackerrank;
 
 public class MergeSortedArrays_1 {
 

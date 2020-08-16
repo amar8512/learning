@@ -1,4 +1,4 @@
-package com.noida.learning.ds;
+package com.noida.learning.ds.hackerrank;
 import java.util.Stack;
 public class BalancingBrackets {
     public static final String SUCCESS = "YES";

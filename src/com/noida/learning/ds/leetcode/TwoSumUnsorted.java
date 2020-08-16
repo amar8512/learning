@@ -1,4 +1,4 @@
-package com.noida.learning.ds;
+package com.noida.learning.ds.leetcode;
 
 import java.util.HashMap;
 
