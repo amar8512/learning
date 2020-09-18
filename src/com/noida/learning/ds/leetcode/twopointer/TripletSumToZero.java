@@ -1,4 +1,4 @@
-package com.noida.learning.ds.leetcode;
+package com.noida.learning.ds.leetcode.twopointer;
 
 import java.util.ArrayList;
 import java.util.List;

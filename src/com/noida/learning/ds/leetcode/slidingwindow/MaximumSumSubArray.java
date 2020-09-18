@@ -1,4 +1,4 @@
-package com.noida.learning.ds.leetcode;
+package com.noida.learning.ds.leetcode.slidingwindow;
 
 public class MaximumSumSubArray {
     public static int findMaxSumSubArray(int K,int arr[]){

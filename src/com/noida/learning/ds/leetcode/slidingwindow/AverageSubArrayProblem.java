@@ -1,4 +1,4 @@
-package com.noida.learning.ds.leetcode;
+package com.noida.learning.ds.leetcode.slidingwindow;
 
 public class AverageSubArrayProblem {
     public static double[] calculateAverageOfSubArrays(int arr[],int K){

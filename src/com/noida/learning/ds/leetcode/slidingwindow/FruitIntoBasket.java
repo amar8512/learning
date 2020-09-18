@@ -1,4 +1,4 @@
-package com.noida.learning.ds.exception;
+package com.noida.learning.ds.leetcode.slidingwindow;
 
 public class FruitIntoBasket {
     public static int totalFruit(int[] tree) {

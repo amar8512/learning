@@ -1,32 +1,46 @@
-package com.noida.learning.ds.leetcode;
+package com.noida.learning.ds.leetcode.breadthfirstsearch;
 
 import java.util.*;
 
-class ReverseLevelOrderTraversal_ll {
+class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+
+		TreeNode(int x) {
+			val = x;
+		}
+	};
+
+class ReverseLevelOrderTraversal {
 	public static List<List<Integer>> traverse(TreeNode root) {
 		List<List<Integer>> result = new LinkedList<List<Integer>>();
 		if (root == null) {
 			return null;
 		} else {
 			Queue<TreeNode> queue = new LinkedList<TreeNode>();
-
+			Stack<List<Integer>> stack = new Stack<List<Integer>>();
 			queue.add(root);
 			while (!queue.isEmpty()) {
 				int size = queue.size();
 				List<Integer> integersLevel = new ArrayList<>();
 				int currentSize = 0;
 				while (currentSize < size) {
-					integersLevel.add(queue.peek().val);
+					TreeNode node = queue.peek();
+					integersLevel.add(node.val);
 					currentSize++;
-					if(queue.peek().left!=null){
-						queue.add(queue.peek().left);
+					if(node.left!=null){
+						queue.add(node.left);
 					}
-					if(queue.peek().right!=null){
-						queue.add(queue.peek().right);
+					if(node.right!=null){
+						queue.add(node.right);
 					}
 					queue.poll();
 				}
-				result.add(0,integersLevel);
+				stack.push(integersLevel);
+			}
+			while (!stack.isEmpty()) {
+				result.add(stack.pop());
 			}
 			return result;
 		}
@@ -39,7 +53,8 @@ class ReverseLevelOrderTraversal_ll {
 		root.left.left = new TreeNode(9);
 		root.right.left = new TreeNode(10);
 		root.right.right = new TreeNode(5);
-		List<List<Integer>> result = ReverseLevelOrderTraversal_ll.traverse(root);
-		System.out.println("Reverse level order traversal Using linked list: " + result);
+		List<List<Integer>> result = ReverseLevelOrderTraversal.traverse(root);
+		System.out.println("Reverse level order traversal: " + result);
 	}
 }
+

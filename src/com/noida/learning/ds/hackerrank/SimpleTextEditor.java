@@ -1,4 +1,4 @@
-package com.noida.learning;
+package com.noida.learning.ds.hackerrank;
 
 import java.io.BufferedReader;
 import java.io.IOException;

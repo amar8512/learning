@@ -1,4 +1,4 @@
-package com.noida.learning.ds.leetcode;
+package com.noida.learning.ds.leetcode.cyclicsort;
 
 import java.util.ArrayList;
 import java.util.Arrays;

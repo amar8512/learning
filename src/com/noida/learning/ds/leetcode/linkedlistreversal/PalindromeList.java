@@ -1,12 +1,4 @@
-package  com.noida.learning.ds.leetcode;
-class ListNode {
-	int value = 0;
-	ListNode next;
-
-	ListNode(int value) {
-		this.value = value;
-	}
-}
+package com.noida.learning.ds.leetcode.linkedlistreversal;
 
 class PalindromicLinkedList {
 
