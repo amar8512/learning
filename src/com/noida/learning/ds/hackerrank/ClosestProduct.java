@@ -1,4 +1,4 @@
-package com.noida.learning.ds;
+package com.noida.learning.ds.hackerrank;
 
 import java.util.ArrayList;
 import java.util.Scanner;
