@@ -1,4 +1,4 @@
-package com.noida.learning.ds.leetcode;
+package com.noida.learning.ds.leetcode.slidingwindow;
 
 import java.util.HashSet;
 import java.util.HashMap;
