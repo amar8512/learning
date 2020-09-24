@@ -21,14 +21,5 @@ public class MinMaxGreedy {
 	public static void main(String[] args) {
 		int arr[] = new int[] { 100,200,300,350,400,401,402};
 		System.out.println(" "+minMaxGreedySolution(arr,3));
-		/*
-		100
-200
-300
-350
-400
-401
-402
-		 */
 	}
 }
