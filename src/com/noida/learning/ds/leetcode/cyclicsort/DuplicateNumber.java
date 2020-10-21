@@ -50,19 +50,19 @@ public class DuplicateNumber {
 		return missingNumber;
 	}
 	public int findDuplicateFastest(int[] nums) {
-		int p1=nums[0],p2=nums[0];
-		do{
-			p1=nums[p1];
-			p2=nums[nums[p2]];
-		}while(p1!=p2);
+	   int slow= nums[0];
+	   int fast = nums[0];
+	   do{
+         slow =nums[slow];
+         fast = nums[nums[fast]];
+	   }while(slow!=fast);
 
-		p1=nums[0];
-		while(p1!=p2){
-			p1=nums[p1];
-			p2=nums[p2];
-		}
-		return p1;
-
+	   fast =nums[0];
+	   while (fast!=slow){
+	   	fast = nums[fast];
+	   	slow = nums[slow];
+	   }
+	   return  fast;
 	}
 
   public int duplicateUsingNegative(int arr[]){
@@ -78,7 +78,7 @@ public class DuplicateNumber {
   }
 	public static void main(String[] args) {
 		DuplicateNumber duplicateNumber = new DuplicateNumber();
-		int nums[] = new int[] { 1, 3, 4, 2, 2 };
+		int nums[] = new int[] { 1, 3, 4, 2, 3 };
 		//System.out.println(duplicateNumber.findDuplicate(nums));
 		System.out.println(duplicateNumber.findDuplicateFastest(nums));
 	}

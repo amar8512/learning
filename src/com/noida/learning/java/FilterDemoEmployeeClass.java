@@ -62,6 +62,6 @@ public class FilterDemoEmployeeClass {
         Set<Map.Entry<Integer,Employee>> entrySet=hashMap.entrySet();
         System.out.println( entrySet.stream().filter(d->d.getValue().getAge()>20).count());
         entrySet.stream().filter(d->d.getValue().getAge()<50).forEach(System.out::println);
-       
+
     }
 }
