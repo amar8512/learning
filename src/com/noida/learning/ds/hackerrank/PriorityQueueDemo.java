@@ -2,14 +2,22 @@ package com.noida.learning.ds.hackerrank;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class PriorityQueueDemo {
     public static PriorityQueue<Integer> priorityQueue = new PriorityQueue<Integer>(
-            new Comparator<Integer>() {
+
+            /*new Comparator<Integer>() {
                 @Override public int compare(Integer o1, Integer o2) {
                     return -1*o1.compareTo(o2);
                 }
-            });
+            }*/
+            (o1, o2) -> {
+              return  -1*o1.compareTo(o2);
+            }
+            );
     public static  void add(int num){
         priorityQueue.add(num);
         System.out.println(priorityQueue.peek());
@@ -22,6 +30,8 @@ public class PriorityQueueDemo {
         for(int i =0;i<arr.length;i++){
             add(arr[i]);
         }
+        Executor executor = Executors.newFixedThreadPool(10);
+        //ExecutorService
         System.out.println("poll "+priorityQueue.poll());
         System.out.println("poll "+priorityQueue.poll());
         System.out.println("poll "+priorityQueue.poll());
