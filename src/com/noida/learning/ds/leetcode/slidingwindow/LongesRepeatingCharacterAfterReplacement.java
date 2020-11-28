@@ -29,5 +29,6 @@ public class LongesRepeatingCharacterAfterReplacement {
         System.out.println(LongesRepeatingCharacterAfterReplacement.characterReplacement("aabccbb", 2));
         System.out.println(LongesRepeatingCharacterAfterReplacement.characterReplacement("abbcb", 1));
         System.out.println(LongesRepeatingCharacterAfterReplacement.characterReplacement("abccde", 1));
+        System.out.println(LongesRepeatingCharacterAfterReplacement.characterReplacement("aaaa", 1));
     }
 }
