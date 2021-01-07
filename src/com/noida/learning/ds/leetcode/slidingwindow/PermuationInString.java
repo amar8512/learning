@@ -44,9 +44,12 @@ public class PermuationInString {
     }
 
     public static void main(String[] args) {
-        System.out.println("Permutation exist: " + new PermuationInString()
+    /*    System.out.println("Permutation exist: " + new PermuationInString()
                 .findPermutation("oidbcaf", "abc"));
         System.out.println("Permutation exist: " + new PermuationInString()
-                .findPermutation("odicf", "dc"));
+                .findPermutation("odicf", "dc"));*/
+      if(""==""){
+          System.out.println("Equal");
+      }
     }
 }

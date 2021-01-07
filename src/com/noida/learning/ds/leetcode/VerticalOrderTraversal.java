@@ -60,7 +60,23 @@ public class VerticalOrderTraversal {
         return lists;
     }
 
+
+    static void toViewTraversal(TreeNode root){
+
+
+    }
+
     public static void main(String[] args) {
+        /*
+                  0
+                /  \
+              5     1
+             /\     /\
+            4  5   6  7
+
+            Expected output 0 5 4 7
+
+         */
        TreeNode root = new TreeNode(0);
         root.left=new TreeNode(5);
         root.right = new TreeNode(1);
